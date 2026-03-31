@@ -4,10 +4,11 @@
   git clone https://github.com/PhongNoCode/AI-WAF.git
   cd AI-WAF
   ```
-2. Create a virtual environment
+2. Create a virtual environment and models folder
   ```
   python3 -m venv venv
   source venv/bin/activate
+  mkdir models
   ```
 3. Install all libraries
   ```
