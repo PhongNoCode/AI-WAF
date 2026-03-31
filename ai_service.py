@@ -21,8 +21,7 @@ async def predict(data: Payload):
     prediction_prob = model.predict_proba([features])[0]
     is_attack_prob = prediction_prob[1]
     
-    # 3. Ngưỡng chặn (Threshold) - Hạ xuống 0.3 để chặn gắt hơn nếu cần
-    threshold = 0.4 
+    threshold = 0.3 
     is_attack = 1 if is_attack_prob > threshold else 0
     
     return {
