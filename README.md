@@ -30,3 +30,8 @@
   ```
   python3 web_app.py
   ```
+8. Test these payloads and compare to modsecurity
+  ```
+  11' or  WEIGHT_STRING(@@version)=WEIGHT_STRING(@@version) --
+  1+un/**/ion+se/**/lect+1,2,3--
+  ```
