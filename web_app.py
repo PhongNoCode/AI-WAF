@@ -19,7 +19,7 @@ def waf_check():
     # Kiểm tra tất cả các tham số trong URL (query string)
     for key, value in request.args.items():
         try:
-            res = requests.post(AI_URL, json={"payload": value}, timeout=1)
+            res = requests.post(AI_URL, json={"sentence": value}, timeout=1)
             if res.json().get("is_attack") == 1:
                 return f"<h1>403 Forbidden</h1><p>AI-WAF đã chặn request chứa mã độc: <b>{value}</b></p>", 403
         except Exception as e:
