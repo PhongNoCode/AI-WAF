@@ -22,15 +22,19 @@
   ```
   python3 add_payloads.py
   ```
-6. Run file ai_service to activate AI WAF
+6. Run AI_model
+  ```
+  python3 train_model.py
+  ```
+7. Run file ai_service to activate AI WAF
   ```
   uvicorn ai_service:app --port 8000
   ```
-7. Open another terminal to run web
+8. Open another terminal to run web
   ```
   python3 web_app.py
   ```
-8. Test these payloads and compare to modsecurity
+9. Test these payloads and compare to modsecurity
   ```
   11' or  WEIGHT_STRING(@@version)=WEIGHT_STRING(@@version) --
   1+un/**/ion+se/**/lect+1,2,3--
