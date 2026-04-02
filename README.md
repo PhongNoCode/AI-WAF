@@ -12,7 +12,7 @@
   ```
 3. Install all libraries
   ```
-  pip install -r requirements.txt
+  pip install pandas scikit-learn joblib fastapi uvicorn flask requests scipy matplotlib seaborn
   ```
 4. Filter the dataset
   ```
