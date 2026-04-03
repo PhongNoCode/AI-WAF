@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 AI_URL = "http://localhost:8000/predict"
 
-# Giao diện HTML đơn giản
+
 HTML_TEMPLATE = """
 <h1>Demo AI-WAF Protection</h1>
 <form method="GET">
