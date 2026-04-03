@@ -15,7 +15,6 @@ def extract_features(s):
     special_count = len(re.findall(special_chars, s))
     special_ratio = special_count / length if length > 0 else 0
     
-    # 3. Các đặc trưng "sát thủ" bắt Bypass
     count_at = s.count("@")            # Bắt @@version
     count_percent = s.count("%")       # Bắt URL Encoding (%55nion)
     count_star = s.count("*")          # Bắt comment /* */
